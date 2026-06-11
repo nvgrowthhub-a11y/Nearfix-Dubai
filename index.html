@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Near Fix Dubai | Premium Appliance Repair Services in Dubai</title>
     <meta name="description" content="Expert AC, Refrigerator, Washing Machine & Home Appliance Repair Services in Dubai. Certified technicians. Genuine parts. 90-Day Warranty. Call +91 8796493504">
-    <meta name="keywords" content="AC repair Dubai, refrigerator repair Dubai, washing machine repair Dubai, dishwasher repair, microwave repair, appliance repair UAE, Near Fix Dubai">
+    <meta name="keywords" content="AC repair Dubai, refrigerator repair Dubai, washing machine repair Dubai, appliance repair UAE">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://nearfixdubai.com">
     
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-        <!-- Local Business Schema -->
+    <!-- Local Business Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -36,24 +27,541 @@
       "priceRange": "₹₹",
       "areaServed": "Dubai, UAE",
       "serviceType": ["AC Repair", "Refrigerator Repair", "Washing Machine Repair"],
-      "url": "https://nearfixdubai.com",
-      "image": "https://nearfixdubai.com/logo.png"
+      "url": "https://nearfixdubai.com"
     }
     </script>
-
-
+    
+    <style>
+        /* ====== COMPLETE CSS STYLES ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0066CC;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #00A651;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #0066CC;
+        }
+        
+        .btn {
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        
+        .btn-success {
+            background: #00A651;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-success:hover {
+            background: #008040;
+        }
+        
+        .btn-white {
+            background: white;
+            color: #0066CC;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0066CC 0%, #004499 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            color: white;
+        }
+        
+        .hero-content h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .hero-content h1 span {
+            color: #00A651;
+        }
+        
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-features {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.15);
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+        
+        .hero-feature-icon {
+            width: 30px;
+            height: 30px;
+            background: #00A651;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-header h2 {
+            font-size: 36px;
+            color: #004499;
+            margin-bottom: 15px;
+        }
+        
+        .section-header p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            border-top: 4px solid #0066CC;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-top: 4px solid #00A651;
+        }
+        
+        .service-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            color: #004499;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .service-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .service-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .service-card ul li::before {
+            content: '✓ ';
+            color: #00A651;
+            font-weight: bold;
+        }
+        
+        .service-price {
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .service-price span {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .service-price strong {
+            font-size: 28px;
+            color: #0066CC;
+            display: block;
+        }
+        
+        /* Why Section */
+        .why-section {
+            background: #E8F4FD;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #0066CC, #00A651);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+            color: white;
+        }
+        
+        .feature-card h4 {
+            color: #004499;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .feature-card p {
+            color: #666;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, #0066CC 0%, #004499 100%);
+            padding: 60px 0;
+            color: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .stat-item p {
+            opacity: 0.9;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: #E8F5E9;
+        }
+        
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .contact-info-card, .contact-form-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-info-card h3, .contact-form-card h3 {
+            color: #004499;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .contact-info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-info-icon {
+            width: 50px;
+            height: 50px;
+            background: #E8F4FD;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        
+        .contact-info-text h4 {
+            color: #004499;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info-text p {
+            color: #666;
+            margin: 0;
+        }
+        
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0066CC;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .btn-full {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+        }
+        
+        .form-success {
+            display: none;
+            background: #E8F5E9;
+            color: #00A651;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #004499;
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h4 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #00A651;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.6);
+        }
+        
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        /* Menu Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #0066CC;
+            transition: 0.3s;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 32px; }
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .contact-wrapper { grid-template-columns: 1fr; }
+            .hero-features { flex-direction: column; }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">
-                    <span class="logo-text">Near<span>Fix</span></span>
-                </a>
+                <a href="index.html" class="logo">Near<span>Fix</span></a>
                 
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" style="color:#0066CC;font-weight:700;">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="why-us.html">Why Us</a></li>
                     <li><a href="about-us.html">About Us</a></li>
@@ -97,300 +605,4 @@
                     <div class="hero-feature">
                         <span class="hero-feature-icon">✓</span>
                         <span>24/7 Support</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Professional repair services for all major home appliances with expert technicians.</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">❄️</div>
-                    <h3>AC Repair</h3>
-                    <p>Split AC, Window AC, Central AC, VRV/VRF Systems</p>
-                    <ul>
-                        <li>Gas Refilling</li>
-                        <li>PCB Repair</li>
-                        <li>Installation</li>
-                        <li>Annual Maintenance</li>
-                    </ul>
-                    <div class="service-price">
-                        <span>Starting from</span>
-                        <strong>₹299</strong>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🧊</div>
-                    <h3>Refrigerator Repair</h3>
-                    <p>Single Door, Double Door, Side-by-Side, French Door</p>
-                    <ul>
-                        <li>Compressor Repair</li>
-                        <li>Gas Refilling</li>
-                        <li>Thermostat Fix</li>
-                        <li>Door Seal Replace</li>
-                    </ul>
-                    <div class="service-price">
-                        <span>Starting from</span>
-                        <strong>₹349</strong>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🧺</div>
-                    <h3>Washing Machine</h3>
-                    <p>Front Load, Top Load, Semi-Auto, Fully Auto</p>
-                    <ul>
-                        <li>Motor Repair</li>
-                        <li>PCB Fix</li>
-                        <li>Drainage Issue</li>
-                        <li>Spin Tub Repair</li>
-                    </ul>
-                    <div class="service-price">
-                        <span>Starting from</span>
-                        <strong>₹299</strong>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🔌</div>
-                    <h3>Other Appliances</h3>
-                    <p>Microwave, Dishwasher, Oven, Water Heater & More</p>
-                    <ul>
-                        <li>Microwave Oven</li>
-                        <li>Water Heater</li>
-                        <li>Dishwasher</li>
-                        <li>Induction Cooktop</li>
-                    </ul>
-                    <div class="service-price">
-                        <span>Starting from</span>
-                        <strong>₹249</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="section why-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Near Fix Dubai</h2>
-                <p>We provide premium service with guaranteed satisfaction</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">✓</div>
-                    <h4>Certified Technicians</h4>
-                    <p>Expert engineers with 10+ years experience</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h4>Transparent Pricing</h4>
-                    <p>No hidden charges - fixed quotes</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h4>90-Day Warranty</h4>
-                    <p>Parts and service guaranteed</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h4>Same-Day Service</h4>
-                    <p>Fast turnaround guaranteed</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📞</div>
-                    <h4>24/7 Support</h4>
-                    <p>Emergency service available</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⭐</div>
-                    <h4>4.9 Star Rating</h4>
-                    <p>Trusted by 10000+ customers</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>10,000+</h3>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="stat-item">
-                    <h3>98%</h3>
-                    <p>Satisfaction Rate</p>
-                </div>
-                <div class="stat-item">
-                    <h3>15+</h3>
-                    <p>Years Experience</p>
-                </div>
-                <div class="stat-item">
-                    <h3>24/7</h3>
-                    <p>Service Available</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="section contact-section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Book Your Service</h2>
-                <p>Fill the form below and we'll contact you within 30 minutes</p>
-            </div>
-            
-            <div class="contact-wrapper">
-                <div class="contact-info-card">
-                    <h3>Contact Information</h3>
-                    
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">📞</div>
-                        <div class="contact-info-text">
-                            <h4>Phone</h4>
-                            <p>+91 8796493504</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">✉️</div>
-                        <div class="contact-info-text">
-                            <h4>Email</h4>
-                            <p>nvgrowthhub@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">📍</div>
-                        <div class="contact-info-text">
-                            <h4>Service Area</h4>
-                            <p>Dubai, UAE</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">🕐</div>
-                        <div class="contact-info-text">
-                            <h4>Working Hours</h4>
-                            <p>24/7 Emergency Service</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form-card">
-                    <h3>Request a Quote</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Select Service *</label>
-                            <select id="service" name="service" required>
-                                <option value="">-- Select Service --</option>
-                                <option value="AC Repair">AC Repair</option>
-                                <option value="Refrigerator Repair">Refrigerator Repair</option>
-                                <option value="Washing Machine Repair">Washing Machine Repair</option>
-                                <option value="Microwave Repair">Microwave Repair</option>
-                                <option value="Dishwasher Repair">Dishwasher Repair</option>
-                                <option value="Water Heater Repair">Water Heater Repair</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Describe Your Issue</label>
-                            <textarea id="message" name="message" placeholder="Describe what problem you're facing..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-success btn-full">📱 Send via WhatsApp</button>
-                        
-                        <div class="form-success">
-                            ✓ Message sent successfully! We'll contact you soon.
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Near<span>Fix</span></h3>
-                    <p>Premium appliance repair services in Dubai. Expert technicians for AC, Refrigerator, Washing Machine & All Home Appliances.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">AC Repair</a></li>
-                        <li><a href="services.html">Refrigerator Repair</a></li>
-                        <li><a href="services.html">Washing Machine</a></li>
-                        <li><a href="services.html">Other Appliances</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="why-us.html">Why Us</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📞 +91 8796493504</li>
-                        <li>✉️ nvgrowthhub@gmail.com</li>
-                        <li>📍 Dubai, UAE</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>© 2024 Near Fix Dubai. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/918796493504" class="whatsapp-float" target="_blank">
-        💬
-    </a>
-
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
-    
-</body>
-</html>
+                    </div
