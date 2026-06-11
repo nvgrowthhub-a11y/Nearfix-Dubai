@@ -749,3 +749,23 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr
+/* Responsive Design Examples */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .menu-toggle { display: flex; }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 40px; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+    .container { max-width: 1200px; }
+}
