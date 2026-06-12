@@ -1,35 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Service Areas Dubai | NearFix Dubai</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+.hero{
+background:linear-gradient(135deg,#1e88e5,#0d47a1);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:800px;
+margin:auto;
+}
+
+.locations{
+padding:80px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:36px;
+color:#111;
+margin-bottom:10px;
+}
+
+.locations-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.location-card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+text-align:center;
+}
+
+.location-card:hover{
+transform:translateY(-8px);
+}
+
+.location-card h3{
+margin-bottom:15px;
+color:#111;
+}
+
+.location-card p{
+color:#666;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.location-card a{
+display:inline-block;
+padding:12px 20px;
+background:#1e88e5;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+}
+
+.location-card a:hover{
+background:#1565c0;
+}
+
+.top-links{
+padding:20px;
+text-align:center;
+background:white;
+}
+
+.top-links a{
+margin:0 10px;
+text-decoration:none;
+font-weight:600;
+color:#1e88e5;
+}
+
+</style>
 </head>
+
 <body>
 
+<div class="top-links">
+<a href="index.html">🏠 Home</a>
+<a href="all-services.html">🔧 All Services</a>
+</div>
+
+<section class="hero">
 <h1>Areas We Serve Across Dubai</h1>
 
-<ul>
+<p>
+NearFix Dubai provides same-day AC Repair, Refrigerator Repair,
+Washing Machine Repair and Home Appliance Repair services across all major locations in Dubai.
+</p>
+</section>
 
-<li><a href="locations/dubai-marina.html">Dubai Marina</a></li>
+<section class="locations">
 
-<li><a href="locations/jumeirah.html">Jumeirah</a></li>
+<div class="container">
 
-<li><a href="locations/business-bay.html">Business Bay</a></li>
+<div class="section-title">
+<h2>Choose Your Area</h2>
+</div>
 
-<li><a href="locations/downtown-dubai.html">Downtown Dubai</a></li>
+<div class="locations-grid">
 
-<li><a href="locations/al-barsha.html">Al Barsha</a></li>
+<div class="location-card">
+<h3>Dubai Marina</h3>
+<p>Fast appliance repair services in Dubai Marina.</p>
+<a href="locations/dubai-marina.html">View Area</a>
+</div>
 
-<li><a href="locations/al-quoz.html">Al Quoz</a></li>
+<div class="location-card">
+<h3>Jumeirah</h3>
+<p>Same-day repair service in Jumeirah.</p>
+<a href="locations/jumeirah.html">View Area</a>
+</div>
 
-<li><a href="locations/deira.html">Deira</a></li>
+<div class="location-card">
+<h3>Business Bay</h3>
+<p>Expert technicians available in Business Bay.</p>
+<a href="locations/business-bay.html">View Area</a>
+</div>
 
-<li><a href="locations/bur-dubai.html">Bur Dubai</a></li>
+<div class="location-card">
+<h3>Downtown Dubai</h3>
+<p>Professional appliance repair in Downtown Dubai.</p>
+<a href="locations/downtown-dubai.html">View Area</a>
+</div>
 
-<li><a href="locations/jlt.html">JLT</a></li>
+<div class="location-card">
+<h3>Al Barsha</h3>
+<p>Reliable home appliance repair services.</p>
+<a href="locations/al-barsha.html">View Area</a>
+</div>
 
-<li><a href="locations/palm-jumeirah.html">Palm Jumeirah</a></li>
+<div class="location-card">
+<h3>Al Quoz</h3>
+<p>Fast and affordable appliance repair.</p>
+<a href="locations/al-quoz.html">View Area</a>
+</div>
 
-</ul>
+<div class="location-card">
+<h3>Deira</h3>
+<p>Certified technicians serving Deira.</p>
+<a href="locations/deira.html">View Area</a>
+</div>
+
+<div class="location-card">
+<h3>Bur Dubai</h3>
+<p>Trusted repair experts in Bur Dubai.</p>
+<a href="locations/bur-dubai.html">View Area</a>
+</div>
+
+<div class="location-card">
+<h3>JLT</h3>
+<p>Emergency appliance repair in JLT.</p>
+<a href="locations/jlt.html">View Area</a>
+</div>
+
+<div class="location-card">
+<h3>Palm Jumeirah</h3>
+<p>Luxury home appliance services in Palm Jumeirah.</p>
+<a href="locations/palm-jumeirah.html">View Area</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 </body>
 </html>
