@@ -797,3 +797,18 @@ footer {
 .btn-primary:hover{
     transform:translateY(-3px);
 }
+.btn-outline{
+    display:inline-block;
+    padding:14px 28px;
+    border:2px solid #ffffff;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-outline:hover{
+    background:#ffffff;
+    color:#1e88e5;
+}
