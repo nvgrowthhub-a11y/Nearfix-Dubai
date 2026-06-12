@@ -780,3 +780,20 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.btn-primary{
+    background:#1e88e5;
+    color:#fff;
+    text-decoration:none;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
