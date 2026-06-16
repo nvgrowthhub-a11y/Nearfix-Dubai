@@ -1,34 +1,46 @@
+// ==================== WHATSAPP NUMBER SETTING START ====================
 const whatsappNumber = "918796493504";
+// Note: Aapka number 8796493504 hai. WhatsApp link ke liye country code ke saath 918796493504 use kiya gaya hai.
+// ==================== WHATSAPP NUMBER SETTING END ====================
 
-const navToggle = document.querySelector(".nav-toggle");
-const mainNav = document.querySelector(".main-nav");
+// ==================== MOBILE MENU SCRIPT START ====================
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
 
-if (navToggle && mainNav) {
-  navToggle.addEventListener("click", () => {
-    mainNav.classList.toggle("open");
+if (menuBtn && navbar) {
+  menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("open");
   });
 
-  mainNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => mainNav.classList.remove("open"));
+  navbar.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navbar.classList.remove("open");
+    });
   });
 }
+// ==================== MOBILE MENU SCRIPT END ====================
 
-const revealItems = document.querySelectorAll(".reveal");
+// ==================== SCROLL ANIMATION SCRIPT START ====================
+const animatedItems = document.querySelectorAll(".animate-up");
 
-const revealObserver = new IntersectionObserver(
+const animationObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
+        entry.target.classList.add("show");
+        animationObserver.unobserve(entry.target);
       }
     });
   },
   { threshold: 0.14 }
 );
 
-revealItems.forEach((item) => revealObserver.observe(item));
+animatedItems.forEach((item) => {
+  animationObserver.observe(item);
+});
+// ==================== SCROLL ANIMATION SCRIPT END ====================
 
+// ==================== BOOKING FORM TO WHATSAPP SCRIPT START ====================
 const bookingForm = document.querySelector("#bookingForm");
 
 if (bookingForm) {
@@ -36,33 +48,39 @@ if (bookingForm) {
     event.preventDefault();
 
     const formData = new FormData(bookingForm);
-    const name = formData.get("name")?.trim();
-    const mobile = formData.get("mobile")?.trim();
-    const city = formData.get("city")?.trim();
-    const service = formData.get("service")?.trim();
-    const message = formData.get("message")?.trim() || "No extra message";
+    const name = formData.get("name").trim();
+    const mobile = formData.get("mobile").trim();
+    const city = formData.get("city").trim();
+    const service = formData.get("service").trim();
+    const message = formData.get("message").trim() || "No extra message";
 
-    const text = [
+    const whatsappMessage = [
       "Hi HomeFix Pro, I want to book a service.",
       "",
       `Name: ${name}`,
       `Mobile: ${mobile}`,
-      `City/Area: ${city}`,
+      `City / Area: ${city}`,
       `Service Required: ${service}`,
       `Message: ${message}`
     ].join("\n");
 
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     bookingForm.reset();
   });
 }
+// ==================== BOOKING FORM TO WHATSAPP SCRIPT END ====================
 
-document.querySelectorAll("details").forEach((detail) => {
-  detail.addEventListener("toggle", () => {
-    if (!detail.open) return;
-    document.querySelectorAll("details").forEach((other) => {
-      if (other !== detail) other.open = false;
+// ==================== FAQ ACCORDION SCRIPT START ====================
+document.querySelectorAll(".faq-list details").forEach((item) => {
+  item.addEventListener("toggle", () => {
+    if (!item.open) return;
+
+    document.querySelectorAll(".faq-list details").forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.open = false;
+      }
     });
   });
 });
+// ==================== FAQ ACCORDION SCRIPT END ====================
