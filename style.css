@@ -723,19 +723,3 @@ textarea {
   }
 }
 /* ==================== MOBILE RESPONSIVE CSS END ==================== */
-.service-img{
-    width:100%;
-    height:120px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:10px;
-    display:block;
-}
-
-.service-card{
-    background:white;
-    padding:15px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    text-align:center;
-}
