@@ -465,8 +465,10 @@ textarea {
 }
 
 .process-card img {
-  height: 145px;
+  width: 100%;
+  height: 220px;
   object-fit: cover;
+  display: block;
 }
 
 .process-card strong {
