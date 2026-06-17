@@ -1,118 +1,233 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>All Services | NearFix Dubai</title>
 
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#f5f7fb;
+
+*{
 margin:0;
-padding:40px;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-h1{
+body{
+background:#f5f7fb;
+}
+
+.header{
+background:#0d47a1;
+padding:40px 20px;
 text-align:center;
-margin-bottom:40px;
+color:white;
+}
+
+.header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.header p{
+font-size:18px;
+opacity:.9;
 }
 
 .services-grid{
+max-width:1300px;
+margin:50px auto;
+padding:0 20px;
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-max-width:1200px;
-margin:auto;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
 .service-card{
 background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-text-align:center;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
 }
 
-.service-card a{
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.service-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.service-content{
+padding:25px;
+}
+
+.service-content h3{
+margin-bottom:10px;
+color:#0d47a1;
+}
+
+.service-content p{
+color:#666;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.btn{
 display:inline-block;
-margin-top:15px;
-padding:10px 20px;
+padding:12px 22px;
 background:#1e88e5;
 color:white;
 text-decoration:none;
-border-radius:8px;
+border-radius:10px;
+font-weight:600;
 }
-</style>
 
+.btn:hover{
+background:#1565c0;
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>Our Repair Services</h1>
+<div class="header">
+<h1>Our Appliance Repair Services</h1>
+<p>Professional Home Appliance Repair Services Across Dubai</p>
+</div>
 
 <div class="services-grid">
 
+<!-- AC REPAIR -->
 <div class="service-card">
-<h3>AC Repair</h3>
-<a href="services/ac-repair.html">View Service</a>
+<img src="images/ac-repair-dubai.jpg" alt="AC Repair Dubai">
+<div class="service-content">
+<h3>AC Repair Dubai</h3>
+<p>Professional AC repair, gas refill and troubleshooting services.</p>
+<a href="services/ac-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- AC INSTALLATION -->
 <div class="service-card">
+<img src="images/ac-installation.jpg" alt="AC Installation">
+<div class="service-content">
 <h3>AC Installation</h3>
-<a href="services/ac-installation.html">View Service</a>
+<p>Expert AC installation for homes, villas and offices.</p>
+<a href="services/ac-installation.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- AC MAINTENANCE -->
 <div class="service-card">
+<img src="images/ac-maintenance.jpg" alt="AC Maintenance">
+<div class="service-content">
 <h3>AC Maintenance</h3>
-<a href="services/ac-maintenance.html">View Service</a>
+<p>Regular AC servicing and annual maintenance contracts.</p>
+<a href="services/ac-maintenance.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- AC NOT COOLING -->
 <div class="service-card">
+<img src="images/ac-not-cooling.jpg" alt="AC Not Cooling">
+<div class="service-content">
 <h3>AC Not Cooling</h3>
-<a href="services/ac-not-cooling.html">View Service</a>
+<p>Quick diagnosis and repair for cooling issues.</p>
+<a href="services/ac-not-cooling.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- FRIDGE -->
 <div class="service-card">
+<img src="images/fridge-repair-dubai.jpg" alt="Fridge Repair">
+<div class="service-content">
 <h3>Fridge Repair</h3>
-<a href="services/fridge-repair.html">View Service</a>
+<p>Compressor repair, gas filling and cooling fixes.</p>
+<a href="services/fridge-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- FREEZER -->
 <div class="service-card">
+<img src="images/freezer-repair.jpg" alt="Freezer Repair">
+<div class="service-content">
 <h3>Freezer Repair</h3>
-<a href="services/freezer-repair.html">View Service</a>
+<p>Freezer cooling and compressor repair services.</p>
+<a href="services/freezer-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- WASHING MACHINE -->
 <div class="service-card">
+<img src="images/washing-machine-repair.jpg" alt="Washing Machine Repair">
+<div class="service-content">
 <h3>Washing Machine Repair</h3>
-<a href="services/washing-machine-repair.html">View Service</a>
+<p>Front load and top load washing machine repairs.</p>
+<a href="services/washing-machine-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- DRYER -->
 <div class="service-card">
+<img src="images/dryer-repair.jpg" alt="Dryer Repair">
+<div class="service-content">
 <h3>Dryer Repair</h3>
-<a href="services/dryer-repair.html">View Service</a>
+<p>Professional dryer troubleshooting and repair.</p>
+<a href="services/dryer-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- MICROWAVE -->
 <div class="service-card">
+<img src="images/microwave-repair.jpg" alt="Microwave Repair">
+<div class="service-content">
 <h3>Microwave Repair</h3>
-<a href="services/microwave-repair.html">View Service</a>
+<p>Microwave oven repair and maintenance services.</p>
+<a href="services/microwave-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- OVEN -->
 <div class="service-card">
+<img src="images/oven-repair.jpg" alt="Oven Repair">
+<div class="service-content">
 <h3>Oven Repair</h3>
-<a href="services/oven-repair.html">View Service</a>
+<p>Electric and built-in oven repair services.</p>
+<a href="services/oven-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- HOME APPLIANCE -->
 <div class="service-card">
+<img src="images/home-appliance-repair.jpg" alt="Home Appliance Repair">
+<div class="service-content">
 <h3>Home Appliance Repair</h3>
-<a href="services/home-appliance-repair.html">View Service</a>
+<p>Complete appliance repair solutions in Dubai.</p>
+<a href="services/home-appliance-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
+<!-- EMERGENCY -->
 <div class="service-card">
+<img src="images/emergency-repair.jpg" alt="Emergency Repair">
+<div class="service-content">
 <h3>Emergency Repair</h3>
-<a href="services/emergency-repair.html">View Service</a>
+<p>24/7 urgent appliance repair service across Dubai.</p>
+<a href="services/emergency-repair.html" class="btn">View Service</a>
+</div>
 </div>
 
 </div>
 
 </body>
 </html>
+```
