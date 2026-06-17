@@ -451,31 +451,58 @@ textarea {
 /* ==================== BOOKING FORM CSS END ==================== */
 
 /* ==================== PROCESS CSS START ==================== */
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+
+.process-section{
+    padding:80px 0;
 }
 
-.process-card {
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--white);
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
 }
 
-.process-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
+.process-card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
-.process-card strong {
-  display: block;
-  padding: 14px;
-  color: var(--navy);
+.process-card:hover{
+    transform:translateY(-5px);
 }
+
+.process-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.process-card h3{
+    margin:0;
+    padding:15px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+}
+
+/* Mobile */
+@media (max-width: 991px){
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media (max-width: 576px){
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+}
+
 /* ==================== PROCESS CSS END ==================== */
 
 /* ==================== REVIEWS CSS START ==================== */
